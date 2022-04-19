@@ -19,7 +19,6 @@
 
 .skill-box{
   padding: 1rem;
-  cursor: pointer;
 }
 
 .skill-title{
@@ -36,10 +35,14 @@
   position: relative;
   border-radius: 45px;
   background: rgb(6,76,197);
-  background: linear-gradient(150deg, rgba(6,76,197,1) 0%, rgba(78,205,177,1) 75%);
+  background: linear-gradient(135deg, rgba(6,76,197,1) 0%, rgba(78,205,177,1) 75%);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.skill-title h4 {
+  margin: 0.5rem;
 }
 
 .skill-icon {
