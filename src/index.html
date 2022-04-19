@@ -1,14 +1,3 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
@@ -25,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
+    <link rel="stylesheet" href="skills.css">
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
@@ -34,7 +24,6 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
@@ -97,6 +86,78 @@
     </section>
     <!-- /END About Section -->
 
+    <section id="skills">
+      <div class="skills-container">
+        <h2 class="section-title dark-blue-text">Skills</h2>
+        <div class="skill-container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="assets/html.png" class="skill-icon">
+              </div>
+              <h5 class="dark-blue-text">HTML</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="assets/css.png" class="skill-icon">
+              </div>
+              <h5 class="dark-blue-text">CSS</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="assets/javascript.png" class="skill-icon">
+              </div>
+              <h5 class="dark-blue-text">JavaScript</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="assets/react.png" class="skill-icon">
+              </div>
+              <h5 class="dark-blue-text">React</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="assets/python.png" class="skill-icon">
+              </div>
+              <h5 class="dark-blue-text">Python</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="assets/mongodb.png" class="skill-icon">
+              </div>
+              <h5 class="dark-blue-text">MongoDB</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="assets/node.png" class="skill-icon">
+              </div>
+              <h5 class="dark-blue-text">Node.js</h5>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="assets/express.png" class="skill-icon">
+              </div>
+              <h5 class="dark-blue-text">Express</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
@@ -112,10 +173,7 @@
                   <p class="mb-4">
                     A traveler focused web app designed to help you navigate new and unfamiliar locations. <br>
                     <br>
-                    - Engineered a mobile-first design for optimal UI/UX to improve the experience and the way the application will be used. <br>
-                    - Utilized a MERN stack (MongoDB, Express, React, Node.js) to build a full stack decoupled application in 7 days with full create, read, update, delete (CRUD) operations. <br>
-                    - Developed in a team of 3 working in sync while using git, GitHub, and heroku as our version control. <br>
-                    - Integrated token-based OAuth with backend hashing to ensure the confidence we offer to our users.
+                    Built using a MERN (MongoDB, Express, React, Node.js) stack optimizing a seperate backend and frontend. Designed with a mobile first approach, since most people will use it while on the road. The application has full create, read, update, and delete capabilities. It also features a token-based OAuth backend with hashing on the password to ensure security.
                   </p>
                 </div>
                 <a
@@ -167,12 +225,7 @@
                   <p class="mb-4">
                     Food recipe web app developed using Node.js, MongoDB, Express.js, RESTful routing. <br>
                     <br>
-                    - Designed a Food Recipe app for the purpose of creating, adding, and sharing all recipes from your personal life. <br>
-                    - Implemented Google Oauth2 for the built-in API that allowed us to store and reuse user data. <br>
-                    - Utilized a MEN stack (MongoDB, Express.js, Node.js) to build a fully functional application in 5 days.  <br>
-                    With full create, read, update, and delete (CRUD) operations hitting all RESTful routes. <br>
-                    - Created the application with a mobile-first approach and styled the application using Bootstrap and 
-                    CSS3 with flexbox layouts. <br>
+                    Built using a MEN stack (MongoDB, Express.js, Node.js). Has full create, read, update, and delete capabilities. Utilized Google OAuth2 for ease of use on the user. This app hits all RESTful routes.
                   </p>
                 </div>
                 <a
@@ -219,21 +272,19 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Connect 4</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    Web game app created using vanilla JavaScript, CSS, HTML, and Animate.style <br>
+                    <br>
+                    This web game app was built using vanilla JavaScript, HTML, and CSS. It is a responsive game with built in audio that plays or doesn't based on the user input. Features responsive messaging and coloring to let the players know whose turn it is.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://fabian-connect-4.surge.sh/"
                 >
                   See Live
                 </a>
@@ -241,7 +292,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/silvafabian/Connect-4"
                 >
                   Source Code
                 </a>
@@ -260,7 +311,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/project-2.png"
                     />
                   </div>
                 </a>
@@ -278,13 +329,13 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">Socials Down Below!</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:silvafabian74@yahoo.com.com"
+            >Email Me</a
           >
         </div>
       </div>
@@ -298,50 +349,13 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://www.linkedin.com/in/fabiannsilva/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/silvafabian" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobidev" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
       </div>
     </footer>
     <!-- /END Footer Section -->
