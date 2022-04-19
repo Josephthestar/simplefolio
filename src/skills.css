@@ -35,8 +35,8 @@
   height: 90px;
   position: relative;
   border-radius: 45px;
-  background: rgb(2,170,176);
-  background: linear-gradient(335deg, rgba(2,170,176,1) 0%, rgba(0,205,172,1) 50%);
+  background: rgb(6,76,197);
+  background: linear-gradient(150deg, rgba(6,76,197,1) 0%, rgba(78,205,177,1) 75%);
   display: flex;
   justify-content: center;
   align-items: center;
